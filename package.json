@@ -4,7 +4,8 @@
   "description": "A service where user can share cab",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon ./src/index.js "
+    "server": "nodemon ./src/index.js ",
+    "start":  "nodemon ./src/index.js"
   },
   "author": "HAP",
   "license": "ISC",
