@@ -9,7 +9,7 @@ const server = new ApolloServer({
   debug: true,
   playground: true,
 });
-PORT = 5000;
+PORT = process.env.PORT || "5000";;
 server.listen(PORT).then(({ url }) => {
   console.log(`Server ready at ${PORT}`);
 });
