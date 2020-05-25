@@ -1,5 +1,6 @@
+const { sendEmailVerify } = require("./sendEmailVerify.resolver");
+const { userExists } = require("./userExists.resolver");
 module.exports = {
-  Query: {},
-  Mutation: {},
-  Subscription: {},
+  Query: { userExists },
+  Mutation: { sendEmailVerify },
 };
