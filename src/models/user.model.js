@@ -8,7 +8,7 @@ const UserSchema = new mongoose.Schema(
       token: String,
       validTill: Date,
     },
-
+    
     personalDetails: {
       name: String,
       gender: String,
