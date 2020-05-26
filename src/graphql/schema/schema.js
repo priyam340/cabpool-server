@@ -6,5 +6,7 @@ exports.typeDefs = gql`
   }
   type Mutation {
     sendEmailVerify(email: String!): String!
+    linkGenerate: String!
   }
+  
 `;
