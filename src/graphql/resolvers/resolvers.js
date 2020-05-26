@@ -5,4 +5,11 @@ const { sendMessage } = require("./sendMessage.resolver");
 module.exports = {
   Query: { userExists },
   Mutation: { sendEmailVerify, linkGenerate, sendMessage },
+  Subscription: {
+    getChatDetails: {
+      subscribe: (_, { link }, { pubsub }) => {
+        return pubsub.asyncIterator(`getChatDetails${link}`);
+      },
+    },
+  },
 };
