@@ -1,10 +1,10 @@
-###`To Run:`
+## To Run:
 
 
-npm install
+### `npm install`
 
 
-npm run server
+### `npm run server`
 
 
 
