@@ -9,4 +9,11 @@ exports.typeDefs = gql`
     linkGenerate: String!
     sendMessage(link: String, email: String, text: String): String!
   }
+  type Subscription {
+    getChatDetails(link: String): [chat]
+  }
+  type chat {
+    email: String
+    text: String
+  }
 `;
