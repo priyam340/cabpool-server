@@ -9,6 +9,7 @@ exports.typeDefs = gql`
     linkGenerate: String!
     sendMessage(link: String, email: String, text: String): String!
     signUp(input: details): User
+    resetPassword(email: String!, password: String!): User
   }
   type Subscription {
     getChatDetails(link: String): [chat]
