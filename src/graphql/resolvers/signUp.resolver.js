@@ -8,7 +8,7 @@ exports.signUp = async (_,args) => {
 		password: password,
 		personalDetails: args.input.personalDetails,
     };
-    
+
     const user = await User(fields).save();
     const response = {
 		id: user.id,

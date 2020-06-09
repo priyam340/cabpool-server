@@ -3,6 +3,7 @@ const { gql } = require("apollo-server");
 exports.typeDefs = gql`
   type Query {
     userExists(email: String!): Boolean
+    getChat(link: String): [chat]
   }
   type Mutation {
     sendEmailVerify(email: String!): String!
@@ -34,5 +35,5 @@ exports.typeDefs = gql`
     gender: String
     mobileNumber: String
   }
-  
+
 `;
