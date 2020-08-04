@@ -8,16 +8,16 @@ exports.sendEmail = async (type, email, extra) => {
     html = "<html>Hello , your verification otp is " + extra.otp + "</html>";
   }
   var transporter = nodemailer.createTransport({
-    host: "smtp.stackmail.com",
+    host: "**********",
     port: 465,
     auth: {
-      user: "admin@cabpooling.cb",
-      pass: "cabpool12",
+      user: "*********",
+      pass: "********",
     },
   });
 
   var mailOptions = {
-    from: "admin@cabpooling.cb",
+    from: "*********",
     to: email,
     subject: subject,
     html: html,
