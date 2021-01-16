@@ -24,10 +24,7 @@ const server = new ApolloServer({
   debug: true,
   playground: true,
 });
-mongoose.connect(
-  "mongodb+srv://cabpool:Priyam@cappool-idla4.mongodb.net/test?authSource=admin&replicaSet=cappool-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true",
-  { useNewUrlParser: true }
-);
+mongoose.connect("mongodb://localhost/cabpool", {useNewUrlParser: true});
 PORT = process.env.PORT || "5000";
 server.listen(PORT).then(({ url, subscriptionsUrl }) => {
   console.log(

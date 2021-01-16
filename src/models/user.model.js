@@ -9,7 +9,10 @@ const UserSchema = new mongoose.Schema(
       token: String,
       validTill: Date,
     },
-    
+    resetToken: {
+      token: String,
+      validTill: Date
+    },
     personalDetails: {
       firstName: String,
       lastName: String,
